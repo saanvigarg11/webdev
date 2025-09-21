@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MIST Webpage</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: black;
+      color: white;
+      text-align: center;
+    }
+
+    /* Navbar */
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #ff752f;
+      padding: 10px 20px;
+    }
+
+    .logo {
+      font-size: 32px;
+      font-weight: bold;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .logo img {
+      height: 40px;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 15px;
+    }
+
+    .nav-links button {
+      background: black;
+      color: white;
+      border: none;
+      border-radius: 25px;
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    .nav-links button.active {
+      background: white;
+      color: black;
+    }
+
+    /* Image cards */
+    .card-container {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      margin: 40px 0;
+    }
+
+    .card {
+      background-color: #ff752f;
+      border-radius: 10px;
+      padding: 50px;
+      width: 250px;
+      height: 200px;
+    }
+
+    .card p {
+      margin-top: 10px;
+      font-size: 14px;
+      color: white;
+    }
+
+    /* Triangle button */
+    .triangle-btn {
+      width: 0;
+      height: 0;
+      border-top: 50px solid transparent;
+      border-bottom: 50px solid transparent;
+      border-left: 100px solid #ff752f;
+      position: relative;
+      margin: 0 auto;
+      cursor: pointer;
+    }
+
+    .triangle-btn span {
+      position: absolute;
+      top: -10px;
+      left: -80px;
+      color: black;
+      font-size: 14px;
+    }
+
+    /* Toggle text */
+    #toggleText {
+      display: none;
+      margin-left: 20px;
+      font-size: 18px;
+      color: white;
+    }
+
+    /* Instruction text */
+    .note {
+      margin-top: 30px;
+      font-size: 14px;
+      color: white;
+    }
+    
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <div class="navbar">
+    <div class="logo">
+      <img src="Screenshot 2025-09-21 231011.png" alt="MIST logo"> 
+      
+    </div>
+    <div class="nav-links">
+      <button class="active">Home</button>
+      <button>Glazing MIST</button>
+      <button>About Us</button>
+    </div>
+  </div>
+
+  <!-- Image cards -->
+  <div class="card-container">
+    <div class="card">
+      <h3>image 1</h3>
+      
+    </div>
+    <div class="card">
+      <h3>image 2</h3>
+      
+    </div>
+    <div class="card">
+      <h3>image 3</h3>
+      
+    </div>
+  </div>
+
+  <!-- Triangle button with toggle text -->
+  <div>
+    <div class="triangle-btn" onclick="toggleText()">
+      <span>click me</span>
+    </div>
+    <p id="toggleText">YOU CLICKED THE BUTTON YAYYY!!!</p>
+  </div>
+
+  <!-- Instruction text -->
+  <div class="note">
+    (on clicking the button, the text on the right appears and on clicking the button again, it disappears)
+  </div>
+
+  <script>
+    function toggleText() {
+      var text = document.getElementById('toggleText');
+      text.style.display = text.style.display === 'none' || text.style.display === '' ? 'block' : 'none';
+    }
+  </script>
+
+</body>
+</html>

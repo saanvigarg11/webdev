@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MIST</title>
+  <style>
+    /* Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Segoe UI", Arial, sans-serif;
+    }
+
+    /* Navbar */
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: #ff7518;      /* orange */
+      padding: 10px 40px;
+    }
+
+    .logo img {
+      height: 60px;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 20px;
+    }
+
+    .btn {
+      text-decoration: none;
+      padding: 12px 30px;
+      border-radius: 999px;  /* fully rounded */
+      font-size: 16px;
+      font-weight: 500;
+      transition: 0.3s;
+    }
+
+    .btn.black {
+      background: black;
+      color: white;
+    }
+
+    .btn.white {
+      background: white;
+      color: black;
+    }
+
+    .btn:hover {
+      opacity: 0.85;
+    }
+
+    /* Main Section */
+    .main-content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;   /* vertical center */
+      align-items: center;       /* horizontal center */
+      height: calc(100vh - 80px); /* full screen minus navbar */
+      background: black;
+      text-align: center;
+    }
+
+    .main-content button {
+      padding: 20px 70px;
+      font-size: 18px;
+      border: none;
+      border-radius: 10px;
+      background: #ff7518;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .main-content button:hover {
+      background: #e65c00;
+    }
+
+    .main-content p {
+      color: white;
+      margin-top: 20px;
+      font-size: 16px;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="logo">
+      <!-- Replace with your actual logo path -->
+      <img src="Screenshot 2025-09-21 231011.png" alt="MIST Logo">
+    </div>
+    <nav class="nav-links">
+      <a href="#" class="btn black">Home</a>
+      <a href="#" class="btn black">Glazing MIST</a>
+      <a href="#" class="btn white">About Us</a>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main class="main-content">
+    <button id="alertBtn">press me pls</button>
+    <p>clicking on this button shows your name, registration number and phone number in a JS alert</p>
+  </main>
+
+  <script>
+    document.getElementById("alertBtn").onclick = function() {
+      alert("Name: John Doe\nReg No: 123456\nPhone: 9876543210");
+    };
+  </script>
+</body>
+</html>

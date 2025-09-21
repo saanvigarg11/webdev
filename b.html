@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Glazing MIST</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: black;
+      color: white;
+      text-align: center;
+    }
+
+    /* Navbar */
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #ff752f;
+      padding: 10px 20px;
+    }
+
+    .logo {
+      height: 50px;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 15px;
+    }
+
+    .nav-links button {
+      background: black;
+      color: white;
+      border: none;
+      border-radius: 25px;
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    .nav-links button.active {
+      background: white;
+      color: black;
+    }
+
+    /* Center logos */
+    .mist-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      justify-items: center;
+      align-items: center;
+      gap: 40px;
+      margin-top: 50px;
+    }
+
+    .mist-item img {
+      width: 250px;
+    }
+
+    .rotate-90 {
+      transform: rotate(90deg);
+    }
+    .rotate-180 {
+      transform: rotate(180deg);
+    }
+    .rotate-270 {
+      transform: rotate(270deg);
+    }
+
+    /* Bottom text */
+    .footer-text {
+      margin-top: 40px;
+      font-size: 16px;
+      font-weight: 500;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <div class="navbar">
+    <img src="Screenshot 2025-09-21 231011.png" alt="MIST Logo" class="logo">
+    <div class="nav-links">
+      <button>Home</button>
+      <button class="active">Glazing MIST</button>
+      <button>About Us</button>
+    </div>
+  </div>
+
+  <!-- 4 Rotated Logos -->
+  <div class="mist-grid">
+    <div class="mist-item"><img src="logo.png" alt="MIST"></div>
+    <div class="mist-item"><img src="logo.png" alt="MIST" class="rotate-90"></div>
+    <div class="mist-item"><img src="logo.png" alt="MIST" class="rotate-270"></div>
+    <div class="mist-item"><img src="logo.png" alt="MIST" class="rotate-180"></div>
+  </div>
+
+  <!-- Bottom text -->
+  <div class="footer-text">
+    USE GPT AND GLAZE MIST FOR ATLEAST 2 PARAGRAPHS
+  </div>
+
+</body>
+</html>
